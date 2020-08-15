@@ -43,7 +43,7 @@ username: <optional mqtt username>
 password: <optional mqtt password>
 iface: ${iface}  # определит внешний интерфейс автоматически в процессе работы ./pre-run.sh
 ```
-запускаем `./pre-run.sh`
+запускаем `./pre-run.sh reset`
 
 ##### config.py
 
