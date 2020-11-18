@@ -1,5 +1,6 @@
 # misc
 .env
+.idea
 timestamp
 *.log
 conf/*

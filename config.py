@@ -12,3 +12,11 @@ class BoilerplateConfig(DeviceConfig):
     def __init__(self, config):
         self.minimal_essential_conf = ESSENTIAL
         super().__init__(config)
+
+    def save(self, data=None):
+        # <-- add here your specific config serializing
+        return super().save()
+
+    def load(self):
+        # <-- add here your specific config deserializing
+        return super().load()
