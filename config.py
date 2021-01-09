@@ -1,13 +1,14 @@
-from skabenclient.config import DeviceConfig
-
-# это словарь, в котором содержится минимальный конфиг, с которым может стартовать девайс
-# сомнительное решение, надо бы это переписать потом.
+from skabenclient.config import DeviceConfigExtended
 
 ESSENTIAL = {
         'minimal': 'boilerplate'        
 }
 
-class BoilerplateConfig(DeviceConfig):
+# DeviceConfigExtended supports file and json download and management
+# use DeviceConfig if you don't need this functionality
+
+
+class BoilerplateConfig(DeviceConfigExtended):
 
     def __init__(self, config):
         self.minimal_essential_conf = ESSENTIAL

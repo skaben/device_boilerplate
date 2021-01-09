@@ -4,5 +4,5 @@
 flake8
 pygame>=1.9.4
 pyaml==18.11.0
-python-dotenv
-skabenclient
+skabenclient>=1.16.10
+skabenproto>=1.18.0
